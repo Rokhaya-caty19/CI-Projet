@@ -18,10 +18,16 @@ jobs:
       # using variables d’environnement et secrets pour les étapes du pipeline
       - name: Étape 1 - Variable workflow
         run: |
-          echo "Démarrage du pipeline d’intégration continue"
+          echo "Démarrage du pipeline dintégration continue"
           echo "STEP1= $STEP1"
 
       - name: Etape 2 - Variable Repository
         run: |
           echo "Variable d'environnment pour l'étape 2"
           echo "STEP2= ${{ vars.STEP2 }}"
+
+           - name: Etape 3 - Variable Secret
+        run: |
+          echo "Variable d'environnment pour l'étape 3"
+          echo "STEP3= ${{ secrets.STEP3 }}"
+          
