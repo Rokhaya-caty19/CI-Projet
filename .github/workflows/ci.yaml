@@ -27,4 +27,4 @@ echo "STEP1= $STEP1"
 - name: Étape 1 - Variable Repository
   run: | 
   echo "Variable d'environnement pour l'etape 2"
-  $echo "STEP2= ${}vars.STEP2{}"
+  $echo "STEP2= ${} vars.STEP2 {}"
